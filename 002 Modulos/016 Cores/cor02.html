@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradiente em CSS</title>
+    <style>
+      * {
+        /*o "*" é uma configuração global que vai ser aplicada a essa CSS*/
+        height: 100%;
+      }
+      body {
+        /*Usamos o background-image e linear-gradient e selecionamos como queremos o gradiente, to top, to right... Ou até em graus 100deg além de podermos selecionar quanto queremos que uma cor preencha mais a tela com uma porcentagem após a cor*/
+
+        background-image: linear-gradient(
+          to bottom,
+          #4565ca,
+          #7544c8 30%,
+          #b5399f,
+          #f24d58,
+          #ffd854,
+          #ff8546
+        );
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Testando gradiente</h1>
+  </body>
+</html>

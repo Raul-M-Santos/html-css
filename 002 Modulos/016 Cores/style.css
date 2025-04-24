@@ -1,0 +1,35 @@
+@charset "UTF-8"; /*Declarando um preset de caracteres*/
+
+* {
+  font-family: Arial, Helvetica, sans-serif; /*Determimando familia das fontes ainda vamos aprender*/
+  /*height: 100%;*/
+}
+
+p {
+  text-align: justify; /*Alinhamento do texto dos paragrafos*/
+}
+
+body {
+  background-image: linear-gradient(/*Degrade*/ to right, #4fb2e3, #617f8e);
+  background-attachment: fixed; /*Para o degrade se aplicar mesmo scrolando a pagina*/
+}
+
+main {
+  /*Criando uma caixa para o main*/
+  background-color: white;
+  width: 600px; /*Altura dessa caixa*/
+  padding: 10px; /*Uma borda para o texto não ficar colado com a ponta da caixa*/
+  margin: auto; /*Para centralizar essa caixa*/
+  border-radius: 10px; /*para aredondar as bordas da caixa*/
+  box-shadow: 5px 5px 15px rgba(21, 47, 59, 0.815); /*Criando uma sombra para a caixa, os valores: O quanto a sombra de desperça para cima, para os lados, opacidade e cor*/
+}
+
+h1 {
+  color: #295977;
+  text-align: center;
+  text-shadow: 1px 1px 0px #2d3539;
+}
+
+h2 {
+  color: #9b992d;
+}

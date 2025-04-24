@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalhando com fontes</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        /*Sobre a declaração das fontes, aqui estamos pedindo para quando o dispositivo tentar carregar a fonte ele primeiro, tente arial se não conseguir ele vai tentar a fonte Helvetica e se não conseguir apenas vai pegar uma fonte sem serifa. Um site para verificar algumas boas combinações (apersar de você poder usar as que achar melhor)
+            https://www.w3schools.com/cssref/css_fonts_fallbacks.php um bom site para verificar sobre cores também*/
+
+        /* Usamos medidas para determinar tamanhos, de diversas coisas nesse caso vamos focar nas fontes 
+            Medidas Absolutas: 
+
+	cm, mm, in, px, pt, pc
+
+    Medidas Relativas:
+                
+        em	->	relativo ao tamanho natural da fonte
+        ex	->	relativo a altura x da fonte
+        rem	->	tipo em, mas relativo a fonte configurada no body
+        vw	->	relativo a largura da view port
+        vh	->	relativo a altura da view port
+        %	->	porcentagem
+
+    Recomendação w3c para fontes:  "px" ou "em"
+
+    Altura padrão:  16px ou 1em
+            */
+        font-size: 1em;
+        text-decoration: underline; /*Podemos usar o text decoration + underline para sublinhar um texto*/
+      }
+      h1 {
+        font: italic bold 3em "Times New Roman", Times, serif	
+
+        /*Shorthand para fontes, ao inves de declaramos todos esses estilos tamanhos e familias podemos apenas usar o comando de font e colocar todos em uma linha seguindo a seguinte ordem, font-style > font-weight > font-size > font family
+        
+        codigo completo como exemplo:
+        
+        font-family: 'Times New Roman", Times, serif;
+        font-size: 3em;
+        font-style: italic;
+        */
+      }
+
+      h2 {
+        font: bold 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptates
+      quas quaerat omnis id ipsam? Commodi iure repellendus dolorem optio,
+      consequuntur dolores accusamus, est cumque quasi nemo reprehenderit,
+      accusantium mollitia? Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Odio, debitis! Perspiciatis praesentium corrupti amet alias
+      voluptatibus possimus, eum facilis ullam nihil nemo dolorum provident
+      animi vero illum magni assumenda dolor. lorem
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nobis
+      repellat molestiae rem facere perferendis eveniet soluta quis sed cumque
+      eos corporis earum impedit delectus modi saepe eius ex alias?
+    </p>
+    <h2>Subtitulo do exercício</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat officia
+      repudiandae inventore placeat aliquid architecto expedita, ipsa
+      distinctio! In exercitationem mollitia pariatur placeat? At asperiores
+      voluptate placeat nisi similique modi!
+    </p>
+  </body>
+</html>

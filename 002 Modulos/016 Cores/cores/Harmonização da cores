@@ -1,0 +1,49 @@
+Cores primarias
+
+Amarelo
+Vermelho
+Azul
+
+Cores secundarias
+Laranja
+Violeta
+Verde
+
+Cores terciarias - São junções de cores primarias com cores secundarias sempre representadas por nome da primaria primeiro mais secundaria 
+
+Amarelo-esverdeado
+Vermelho-alaranjado
+Vermelho-arroxeado
+Azul-arroxeado
+Azul-esverdeado
+
+Temperaturas de cores
+Podemos adicionalmente usar essas cores para emitir uma sensação de temperatura mais quente ou frio além de serem cores que tendem a ter harmonia
+
+Paleta de cores
+Precisamos de uma cor principal para um projeto, dependendo do que for vamos usar cores diferentes por exemplo, um amarelo para restaurantes
+E normalmante com uma paleta de 3 a 5 cores (desconsiderando branco e preto)
+Podemos usar uma cor principal de uma logo de um cliente que estamos fazendo algum projeto
+
+Complementares
+São cores opostas umas as outras por exemplo roxo com amarelo que geram muito contraste, não são necessariamente bonitas pois temos muitos tons que geram impressões diferentes mas se destacam uma na outra
+
+Cores analogas
+São cores irmãs seguem o mesmo conceito mas inverso das complementares não tem contraste mas tem harmonia
+
+Analogas mas complementares
+Juntando os ultimos 2 conceitos podemos já gerar uma paleta de cores que já fazem sentido juntas
+
+analogas relacionais
+Selecionamos 2 cores analogas (proximas umas as outras) e pulamos para a proxima criando também cores que fazem sentido juntas e contraste, mesmo que sendo um pouco menos
+
+monocromia
+Usamos uma cor como base e alteramos a luminosidade e matiz das cores para gerarmos uma paleta
+
+Ferramentas
+
+https://color.adobe.com - Muito boa com ferramentas para criar uma paleta de cores usando os meotodos acima, extrair uma paleta de cores de uma logo, gradiente, buscar por paletas já criadas
+
+https://paletton.com/ podemos usar esse para criar as paletas mas também para ver um preview de um site com essa paleta
+
+https://coolors.co/ bom para gerar paletas do zero gerando algumas aleatorias mas usando as tecnicas acima

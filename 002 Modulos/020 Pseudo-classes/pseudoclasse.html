@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-classes</title>
+    <style>
+      div {
+        /*Pseudo classes são estilos de estados */
+        display: inline-block;
+        background-color: lightgray;
+        text-align: center;
+        border: 1px solid black;
+        height: 200px;
+        width: 200px;
+      }
+      div:hover {
+        /*Usamos o ":" para determinar uma pseudo classe, após esse : colocamos a ação nesse caso estamos usando o hover como exemplo que significa quando passar o mouse */
+        background-color: aqua; /*Ou seja ao passar o mouse vai se aplicar esse estilo, ou seja ao passar o mouse sobre essas divs o fundo vai ficar azul */
+      } /*Muito usado para seletores */
+    </style>
+  </head>
+  <body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+  </body>
+</html>

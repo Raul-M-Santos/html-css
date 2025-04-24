@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links</title>
+  </head>
+  <body>
+    <h1>Personalizando links</h1>
+    <style>
+      /* Seletores 
+        # = id
+        . = classe 
+        * = tudo
+        : = pseudo classe
+        :: = pseudo elemento 
+        */
+
+      a {
+        /* Usando mais algumas pseudo classes */
+        color: red;
+        text-decoration: none;
+      }
+
+      a:visited {
+        /* Quando o link já foi visitado */
+        color: darkred;
+      }
+
+      a:hover {
+        /* Quando o passarmos o mouse por cima */
+        text-decoration: underline;
+        color: black;
+      }
+
+      a:active {
+        /* O active é para quando estamos clicando em algum elemtento mas após soltarmos o click o elemento volta ao normal*/
+        color: blue;
+      }
+
+      a::after {
+        /* O after é para quando queremos adicionar algo depois do elemento, nesse caso estamos adicionando um icone de link depois do texto */
+
+        content: "[link]";
+        font-weight: normal;
+        color: darkgrey;
+        display: inline-block;
+      }
+      a::before {
+        /* O before é para quando queremos adicionar algo antes do elemento, nesse caso estamos adicionando um icone de link antes do texto */
+        content: "[link]";
+        font-weight: normal;
+        color: darkgrey;
+      }
+    </style>
+    <ul>
+      <a
+        target="_blank"
+        href="https://github.com/gustavoguanabara/html-css/tree/master/exercicios"
+      >
+        <li>Repositorio do Github</li>
+      </a>
+      <a target="_blank" href="https://www.youtube.com/c/CursoemV%C3%ADdeo">
+        <li>Canal do Youtube</li>
+      </a>
+      <a target="_blank" href="https://www.cursoemvideo.com/">
+        <li>Site curso em video</li>
+      </a>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste de Bordas</title>
+    <style>
+      h1 {
+        /* Aqui estamos usando uma imagem como borda */
+        border: 20px solid transparent; /* Para aplicar essa borda precisamos ter uma borda qualquer antes */
+        padding: 10px;
+        border-image-source: url(borda.png); /* Aqui estamos importando o arquivo da borda */
+        border-image-slice: 28; /* Aqui estamos determinando que essa imagem vai ser cortada 27 vezes */
+        border-image-repeat: repeat; /* Aqui estamos determinando que a imagem vai se repetir até preencher a borda toda do h1*/
+      }
+      /* Podemos usar shorthand para esse border-image a ordem para digitar os valores é a mesma desse style, o src, slice, e repeat */
+
+      /* Uma coisa importante, os navegadores as vezes carregam margens ou paddings automaticamente apenas por ter uma tag, para zerar isso podemos usar o seletor "*" no css ele basicamente seleciona todos os outros seletores e dentro dele podemos colocar margin:0px e paddding:0px */
+    </style>
+  </head>
+  <body>
+    <h1>Teste de Borda</h1>
+  </body>
+</html>

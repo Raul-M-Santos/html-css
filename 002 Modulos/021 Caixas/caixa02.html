@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping Tags</title>
+    <!-- Vamos determinar e usar algumas tags de agrupamento sematicas-->
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: dimgray;
+        margin: 0px;
+      }
+      header {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+      }
+      main {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px 0px; /*Assim como o shorthand  de 4 propriedades aqui dá para fazer o mesmo, de selecionar apenas duas propriedades para serem alteradas */
+        box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.466); /* Se aplicarmos uma  sobre a uma caixa que tenha raio a sombra também se aplica com raio*/
+      }
+
+      article {
+        background-color: grey;
+      }
+
+      nav {
+        background-color: rgb(56, 56, 56);
+        padding: 3px;
+        box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.342);
+        border-radius: 5px;
+      }
+
+      nav > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-right: 30px;
+      }
+
+      nav > a:hover {
+        text-decoration: underline;
+      }
+
+      article > aside {
+        background-color: rgb(49, 47, 47);
+        color: white;
+      }
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 4px;
+        margin: 0px;
+      }
+
+      footer > p {
+        margin: 0px;
+      }
+
+      div#bola {
+        height: 50px;
+        height: 50px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Header usada para o cabeçalho da pagina -->
+      <h1>Meu site</h1>
+      <nav>
+        <!-- Usada para navegação-->
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </nav>
+    </header>
+    <main>
+      <!-- Main, usada para conteudo -->
+      <section id="assuntos">
+        <p>Esportes e tecnologia</p>
+      </section>
+      <!-- Section, usada para determinar sessões  da pagina-->
+      <section id="noticias">
+        <article>
+          <!-- Usada para artigos -->
+          <h2>Noticias</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
+            quasi quia tenetur delectus aspernatur in minima voluptatem pariatur
+            ex! Veniam debitis enim quo, mollitia obcaecati repellat
+            consequuntur dolorem maiores itaque!
+          </p>
+          <aside>
+            <!-- Para marcar algo dentro do artigo-->
+            <p>Artigo escrito por Eullkslk</p>
+          </aside>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <!-- Roda pé do site -->
+      <p>Desnvolvido por eu kk</p>
+    </footer>
+    <div id="bola"></div>
+  </body>
+</html>

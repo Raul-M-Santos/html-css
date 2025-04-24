@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!--Podemos criar listas no sentido literal que é bastate utlizado para menus-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body> <!--podemos usar ol para listas ordenadas ou seja nossa lista vai ter uma numeração-->
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol type="1" start="2"> <!--tipos, "A" para usar letras em maiusculo, "a" mesmo coisa mas minusculo,i para augorismos romanos mas minusculo, I para maiusculo e 1 para usar numeros, podemos usar o star para ele começar de outro lugar-->
+        <li>Acordar</li>
+        <li>tomar a testo</li>
+        <li>Tomar café</li>
+        <li>punhetão</li>
+        <li>escovar os dentes</li>
+        <li>Trabalho</li>
+        <li>coxilo</li>
+        <li>estudar</li>
+    </ol> 
+    <h2>Listas não ordenadas</h2>
+    <ul type="circle"> <!--disc, circle, square-->
+        <li>Arroz</li>
+        <li>Morango</li>
+        <li>Macarão</li>
+        <li>Proteina</li>
+        <li>suggar</li>
+    </ul> <!--Podemos usar ul para listas não ordenadas ou seja é apenas uma lista mas sem prioridade do que ser feito primeiro-->
+    <h2>Juntando listas</h2> <!--Podemos juntar ambas  -->
+    <ol> <!--Criando a lista ordenada-->
+        <li>Antigas novas</li>
+        <ol type="a"> <!--Fazendo a lista ordenada dentro de outro lista-->
+            <li>clipper</li> <!--dentro dessa lista podemos criar uma lista de terceiro nivel é só adcionar mais uma ul ou ol-->
+            <li>VB</li>
+            <li>leans</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a">
+            <li>Javascript</li>
+            <li>php</li>
+        </ol>
+    </ol>
+    <h2>Jogos favoritos</h2>
+    <ol> <!--Criando uma lista ordenada-->
+        <li>PS1</li>
+        <ul type="square"> <!--Criando uma não ordernada dentro de um ordenada-->
+            <li>Jogo da pantera cor de rosa</li>
+            <li>Crash</li>
+            <li>RE3</li>
+        </ul>
+        <li>Xbox</li>
+        <ul type="square">
+            <li>bo2</li>
+            <li>gta</li>
+            <li>kinect adventures</li>
+        </ul>
+        <li>PC</li>
+        <ul type="square"> <!--Se quiser alterar uma mesma coisa em mais de uma linha podemos ir clicando no que queremos alterar segurando o alt-->
+            <li>CS</li>
+            <li>baloran</li>
+            <li>Lol</li>
+        </ul>
+    </ol>
+    <h2>Lista de definições</h2>
+    <dl> <!--Lista de definições são parecirdas mas usam marcações diferentes DL para iniciar a lista-->
+        <dt>Termo</dt> <!--O termo e si-->
+        <dd>Descrição</dd> <!--A definição desse termo-->
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação de conteudo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação de formatação de um site</dd>
+        <dt>Javascript</dt>
+        <dd>Linguagem de programação para a criação de interativadade de um site</dd>
+    </dl>
+</body>
+</html>

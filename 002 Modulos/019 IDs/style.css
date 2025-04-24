@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/*Podemos  usar o ID em HTML para marcar uma div
+E podemos selecionar essa div com # no CSS, dessa forma vamos alterar apenas as propriedades da div com esse ID
+
+Podemos tamém usar o class em HTML
+E em CSS selecionariamos essa clase usando o "."*/
+
+body {
+  background-color: rgba(215, 255, 242, 0.781);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: rgb(0, 36, 24);
+}
+
+h2 {
+  color: rgb(35, 121, 92);
+}
+
+h1#principal {
+  /*Poderiamos também usar apenas o # sem o h1 isso selecionaria qualquer div com o ID principal */
+  text-align: center;
+  color: aliceblue;
+  text-shadow: 10px 3px 10px black;
+}
+/* Uma recomendação do w3c é que não podemos usar um mesmo ID em um mesmo documento que é para identificar uma div espesifica então o recomendado é se eu quiser mudar mais um h1 nessa pagina usar o class ou usar um ID diferente do "principal"*/
+
+.basico {
+  color: aquamarine;
+  font-style: italic;
+}
+
+.intermediario {
+  color: rgb(255, 195, 84);
+  font-style: initial;
+}
+
+.avançado {
+  color: rgb(255, 120, 120);
+}
+
+.destaque {
+  background-color: aliceblue;
+  text-shadow: 3px 3px 10px black;
+}
+/*Assim como no ID poderiamos selecionar usando h2.basico mas normalmente para as class não usamos a div antes*/

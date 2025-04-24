@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo de Hover</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+        div > p {
+        /*o > em css siginifica que eu estou pegando um p mas apenas p que estejam dentro de uma div como no html abaixo*/
+        display: none; /* Aqui estamos pedindo para não mostrar o texto */
+      }
+      div:hover {
+        color: rgb(145, 255, 0);
+        font-weight: bold;
+      }
+      div:hover > p {
+        /* Aqui estamos usando uma pseudoclasse e atribuindo ela da mesma forma acima com o hover então os estilos vão se aplicar apenas quando passarmos o mouse sobre mas para algum p que esteja dentro de uma div*/
+        display: block; /* Então assim que eu passar o mouse sobre essa div que tenha um P dentro ele vai aplicar esses estilos ao P */
+        color: white;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+      Passe o mouse aqui
+      <p>TEXTO ESCONDIDO</p> <!--Aqui o P dentro da div  Podemos usar isso para fazer droop menus-->
+    </div>
+    <p>Fim do exemplo</p>
+  </body>
+</html>

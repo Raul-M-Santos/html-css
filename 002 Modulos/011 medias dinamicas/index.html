@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Midias em HTML5</title>
+  </head>
+  <body>
+    <h1>Imagem dinâmica</h1>
+    <!--Carregando imagens diferentes dependendo do tamanho da tela-->
+    <p>
+      Tente abrir esse site em varios dispositivos diferentes ou apenas diminua
+      ou aumente o tamanho do seu navegador
+    </p>
+
+    <picture>
+      <!--Podemos usar a tag de picture que é parecida com a de img mas permite carregar sources diferentes dependedo de algumas condições-->
+
+      <source
+        media="(max-width: 750px)"
+        srcset="Imagens/foto-p.png"
+        type="image/png"
+      />
+      <!--Usando a tag source aqui estamos determinando que caso a largura maxima diminua para menos de 750px ele vai carregar a foto pequena-->
+
+      <source
+        media="(max-width: 1050px)"
+        srcset="Imagens/foto-m.png"
+        type="image/png"
+      />
+      <!--Aqui estamos fazendo o mesmo, só que para 1050px e vai carregar a foto media-->
+      <img src="Imagens/foto-g.png" alt="Imagem Flexivel" />
+      <!--Aqui caso nenhuma das condições sejam atingidas ou seja o site é maior que 1050px ele vai carregar a imagem grande-->
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos reproduzir um audio em html5</p>
+    <audio src="medias/how-deep-is-your -love.mp3" controls></audio>
+    <!--Aqui estamos usando a tag de audio para adicionar o arquvio de audio-->
+    <!--Podemos adicionar alguns parametros como "controls" para aparecer um player e autoplay para começar o audio automaticamente-->
+    <!--Alguns navegadores não tem total compatibilidade com mp3, então podemos usar outros como WAV e OGG além do mp3-->
+
+    <!--Aqui estamos apenas usando a tag audio e colocando os sources dentro da tag de audio-->
+    <audio preload="none" controls loop>
+      <!--Parametros preload: podemos usar o auto e o site vai considerar que carregou completamente apenas quando carregar todo o arquivo. meta data: ele vai carregar os arquivos de metadata do conteudo, como tamanho duração etc
+      none: não vai carregar nada do arquivo até dar o play, e o loop vai lopar o audio infinitamente-->
+      <source src="medias/how-deep-is-your -love.mp3" type="audio/mpeg" />
+      <!--Dessa forma podemos carregar formatos diferentes caso o navegador não seja compativel com mp3-->
+      <source src="medias/how-deep-is-your -love.ogg" type="audio/ogg" />
+      <!--Aqui estamos carregando um arquivo ogg-->
+      <source src="medias/how-deep-is-your -love.wav" type="audio/wav" />
+      <!--Aqui um arquivo wav-->
+      <p>
+        Seu navegador não é compativel com audio
+        <a
+          href="medias/how-deep-is-your -love.mp3"
+          download="medias/how-deep-is-your -love.mp3"
+          >clique aqui para baixar o arquivo</a
+        >
+      </p>
+    </audio>
+    <!--Sempre precisamos tomar cuidado com os tamnhos dos arquivos para o site não ficar muito pesado-->
+  </body>
+</html>

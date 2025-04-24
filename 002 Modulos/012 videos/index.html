@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vídeos em HTML5</title>
+  </head>
+  <body>
+    <h1>Vídeos em HTML5</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+
+    <video
+      width="600px"
+      height="450"
+      controls
+      poster="imagens/landscape-of-mountain-with-misty-gentle-illustration-drawing-digital-art-free-png.webp"
+      loop
+    >
+      <!--
+        A tag <video> pode ser usada com o parâmetro "source src" para especificar os formatos de vídeo.
+        Podemos adicionar parâmetros como "controls" e "autoplay", assim como a opção "poster" para exibir uma thumbnail.
+      -->
+      <source src="media/meuvideo-1920_1080_30fps.mp4" type="video/mp4" />
+      <source src="media/meuvideo-720-30fps.webm" type="video/webm" />
+      <source src="media/meuvideo-720-30fps.ogv" type="video/ogv" />
+      <source src="media/meuvideo-1920_1080_30fps.mp4" type="video/mp4" />
+    </video>
+    <!--Adiconar mais de um formato pode ser util como para audios onde alguns navegadores não são compativeis com alguns navegadores-->
+    <!--Outra coisa é hospedar videos no proprio site vai pesar muito em hospedagem, Caso o cliente queria dessa forma é bom explicar que vai ter muito trafego de dados-->
+
+    <h1>Inserindo videos do youtube</h1>
+    <iframe
+      width="600px"
+      height="450"
+      src="https://www.youtube.com/embed/IUUulrXii5w?si=ggQJ2AsHoNHdLVS6"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen;
+      muted
+    ></iframe>
+    <!--
+    Podemos usar o incorporar na parte de compartilhar do youtube ou outras plataformas de hospedagem de videos, dessa forma nós zeramos os custos adicionais pelo menos com hospedagem que gastariamos pelo trafico a mais da outra forma
+    -->
+    <h1>Agora usando o vimeo</h1>
+    <iframe
+      src="https://player.vimeo.com/video/677324350?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+      width="600"
+      height="338"
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+      title="CRUSH"
+    ></iframe>
+  </body>
+</html>

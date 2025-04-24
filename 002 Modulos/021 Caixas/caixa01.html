@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        background-color: grey;
+        height: 300px; /* Aqui estamos determinando a altura da caixa inteira*/
+        width: 300px; /* Aqui estamos determinando a largura da caixa inteira da caixa inteira */
+        border: 10px solid black; /* Aqui estamos determinando a borda da caixa inteira */
+        padding: 10px 5px; /* Aqui estamos determinando o espaçamento interno da caixa inteira */
+        margin: 20px auto 40px auto; /* Aqui estamos determinando o espaçamento externo da caixa inteira */
+        outline: 5px dashed salmon; /* Aqui estamos determinando o contorno da caixa inteira */
+      }
+
+      a {
+        border: 10px solid red; /*Aqui usando um shorthand*/
+        padding: 10px; /* usando um shorthand mas simplificado, como determinamos apenas 10 px esses 10px vão ser aplicados para todos os 4 lados da caixa*/
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de caixa box level</h1>
+    <p>
+      Paragrafos também são exemplos do tipo box level mas o
+      <a href="#">os links são inline level</a> vamos ver como tudo isso
+      funciona
+    </p>
+  </body>
+</html>

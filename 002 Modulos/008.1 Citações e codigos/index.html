@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Codigo-fonte / Pré formatado</h2>
+    <p>O comando <code>document.getElemetById('teste') é escrito em linguagem JavaScript</code></p>
+    <!--Podemos usar a tag code para indicar um codigo em quesitos de forma o texto fica com uma fonte momoespaçada ou seja todas as letras ocupam o mesmo espaço desde um "." até um "m"-->
+    <pre>
+        <code>
+    num = int(inupt('digite um numero'))
+    if num % 2 == 0:
+        print(f'O numero {num} é PAR')
+    else:
+        print(f'O numero {num} é Impar')
+    print ('Fim do programa')
+        </code>
+    </pre>
+    <!--a tag pre lê inclusive as indentações do codigo (espaços) podemos usar o atalho shift+tab para reduzir esse epaço com a margem do codigo ou apenas tab para aumentar esse espaço basta selecionar o texto antes-->
+    <h2>Citações simples</h2>
+    <p>Como diria meu penis: <q>Glub</q></p>
+    <!--Usamos a tag q de quote em efeitos de forma ele adiciona aspas "gira"-->
+    <p>Agora para citações deslocadas, como diria meu piru:</p>
+    <blockquote cite="https://www.youtube.com/watch?v=4ynvsrkamt8&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=24">
+        ta pio
+        <!--Aqui ele desloca o texto para uma linha destacada, normalmante usada para citações importantes e maiores o cite serve para incicar para o navegador onde essa informação está disponivel-->
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup">HTML </abbr>e <abbr title="Cascading Style Sheets">CSS!</abbr></p>
+    <!--O abbr indica uma abreviação, podemos preencher o title dessa tag para deixarmos o texto completo dessa abreviação ao passarmos o cursor nesse texto abreviado-->
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Ta ao contrario kkk</bdo></p> <!--tag bdo para invertermos um texto rtl right to left-->
+</body>
+
+</html>

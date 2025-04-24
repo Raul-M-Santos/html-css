@@ -1,0 +1,25 @@
+<!DOCTYPE html> <!--Podemos colocar links externos dentro do site para direcionar para outros sites diferentes-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=27">acessar </a></p> <!--Podemos usar a tag "a" para isso, a de anchor-->
+    <p>E o <a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf" target="_blank" rel="external">repositorido do github</a></p>
+    <!--Uma coisa boa para fazermos é pedir para link abrir em uma nova aba para o usuario não perder o progresso de algo no site ou simplesmenete não acessar ele depois de clickar no link-->
+        <!--Para isso usamos o "target=_blanck" isso vai abrir em uma nova aba além de podemos usar a tag de rel="external" para dizer que é um link externo-->
+    
+    <h1>Usando links internos</h1>
+    <p>Essa é a primeira pagina, se quiser acessar a segunda é só <a href="pag002.html" rel="next">acessar o link</a></p> <!--Para fazer um link interno-->
+    <!--Podemos usar a mesma tag "a" e usar o crtl+espaço para o VScode indicar um link que esteja na mesma pasta que a do html que estamos usando (acessa a pagina 2 e leia as anotações)-->
+    <p>Você também pode acessar a terceira pagina de <a href="noticías/pag003.html" target="_self" rel="next">noticías</a></p><!--Podemos usar o target como self para indicar que precisa abrir na mesma aba apersar que se não colocarmos nada no target a pagina já vai abrir na mesma aba-->
+    <h1>Links para downloads</h1>
+    <ul>
+        <li><a href="livro/01 - História da Internet.pdf" download="meulivro.pdf" type="application/pdf">baixar o link em pdf</a></li> <!--Para baixar podemos usar a tag download, e colocar o tipo de download nesse caso uma aplicação em pdf (alguns navegadores podem tentar exibir o pdf ao inves de baixar)-->
+        <li><a href="livro/01 - História da Internet.zip" download="meucu.zip" type="application/zip">baixar o link compactado</a></li> <!--o nome dentro das aspas (gira) dentro da tag de download servem para determinar o nome do arquivo quando ele for baixado para o cliente-->
+    </ul>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fontes externas</title>
+    <style>
+      @font-face {
+        /*Podemos usar o import @font face para importar uma fonte salva localmente, no url escolhemos a fonte como se fosse um arquivo de img, audio pdf, e no font family determinamos o nome da fonte para aplicar no seletor, podendo adicionar mais de uma e caso o navegador não seja compativel com o formato de uma ttf ou otf ele carrega a outra */
+        font-family: goth;
+        src: url(fonts/Angel\ wish.otf), url(fonts/Angel\ wish.ttf);
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        font-family: "goth", Times, serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fontes externas</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis soluta
+      obcaecati vel culpa mollitia sed veniam repellendus tempora, amet, dolorum
+      nam dolorem. Accusantium quo a quas. Eum tenetur atque neque?
+    </p>
+  </body>
+</html>
