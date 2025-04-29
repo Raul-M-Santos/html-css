@@ -2,4 +2,4 @@
 
 Estudos html e css
 
-Testando sites e repositorios;
+Testando sites e gerenciando repositorios;
