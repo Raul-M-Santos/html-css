@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        background-color: black;
+        background-image: url(imagens/wallpaper002.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover; /* Além dos já padrões: em px rem de medidas para o size podemos usar o cover ou contain para ajustar a imagen do tamanho da tela oque cada uma faz: */
+
+        /* Cover: vai cobrir a caixa com a imagem sem distorções ou seja, nem que ele não exiba a imagem por completo ela não vai ficar mais larga já que ele sempre se molda com o tamanho da caixa*/
+
+        /* Contain: Esse vai exibir sempre a imagem por completo independete do tamanho da caixa nem que para isso a imagem tenha que diminuir o tamanho da imagem e mostar as vezes o background color */
+
+        /* Nesse exemplo o cover seria melhor já que não ver a imagem por completo não seria um problema visual tão grande quanto mostrar bordas pretas mas isso é para esse caso com essa imagem, se for outra de outro tamanho talvez o contain seja melhor */
+      }
+
+      main {
+        background-color: white;
+        width: 400px;
+        padding: 10px;
+        margin: auto;
+        border: 1px solid blue;
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Teste de imagem de fundo</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In aperiam
+        animi odio vitae deleniti asperiores iste mollitia quod blanditiis
+        facere dolores impedit, dolorum, dolor assumenda illo nostrum deserunt
+        accusamus itaque. Lorem ipsum dolor sit amet consectetur, adipisicing
+        elit. Illo dignissimos, atque autem deleniti optio ab accusamus quas
+        error voluptatem tempore iusto ut pariatur? A, expedita tenetur minima
+        molestias hic harum? Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Molestiae adipisci eveniet placeat ad quos unde sed aut quo animi
+        consectetur, nostrum, id voluptatum repellat, amet nam ratione enim
+        dolor labore.
+      </p>
+    </main>
+  </body>
+</html>
