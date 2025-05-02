@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alinhamento vertical</title>
+    <style>
+      #container {
+        background-image: url(imagens/target001.png);
+        background-size: 100% 100%;
+        height: 96vh;
+        padding: 10px;
+        background-color: purple;
+      }
+      #conteudo {
+        position: absolute; /* Para alinhar um conteudo verticalmente dentro de uma caixa: Precisamos primeiro marcar a posição dele como absoluta isso vai fazer com que o possamos mover esse conteudo em relação ao container que ele está dentro "pai"*/
+        height: 200px;
+        width: 400px;
+        background-color: yellow;
+        background-image: url(imagens/target001.png);
+        background-size: 100% 100%;
+        left: 50%; /* Aqui estamos declarando que o conteudo deve ficar na metade do container pai*/
+        top: 50%;  /* Mas como a caixa em si também tem um tamanho ele nãi fica 100% no centro já que assim como nos exemplos de bckgrnd img ele vai considerar o attach ao canto superior esquerdo */
+        transform: translate(-50%, -50%); /* Então podemos usar o transform translate para alterar a localização do conteudo em si não da pagina, usando negativo vai mexer para a esquerda e para cima*/
+      }
+    </style>
+  </head>
+  <body>
+    <section id="container">
+      <article id="conteudo"></article>
+    </section>
+  </body>
+</html>
