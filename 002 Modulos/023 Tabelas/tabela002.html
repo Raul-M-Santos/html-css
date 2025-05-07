@@ -12,6 +12,7 @@
       table {
         width: 500px;
         border-collapse: collapse;
+        position: relative;
       }
 
       td,
@@ -24,6 +25,13 @@
       tfoot {
         background-color: grey;
         color: white;
+      }
+
+      /* Para fixar o topo da tabela no corpo tabela, mesmo scrolando a header da tabela vai ficar fixada na primeira linha */
+      thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: grey;
       }
 
       td.num {
@@ -67,7 +75,8 @@
         <th scope="col">Estado</th>
         <!-- Usando o th já que esse vai ser um titulo dos dados de estado -->
 
-        <th scope="col">População</th>  <!--Podemos usar a função de scope para de terminar o scopo desse th nesse caso os dados desses th estão na mesma coluna dele nesse caso o scope é col, se fosse na mesma linha seria row não vai ter nenhum efeito visual mas como já explicado html é para a marcação do texto que é importante para mecanismos de pesquisa-->
+        <th scope="col">População</th>
+        <!--Podemos usar a função de scope para de terminar o scopo desse th nesse caso os dados desses th estão na mesma coluna dele nesse caso o scope é col, se fosse na mesma linha seria row não vai ter nenhum efeito visual mas como já explicado html é para a marcação do texto que é importante para mecanismos de pesquisa-->
       </thead>
 
       <tbody>
@@ -188,5 +197,101 @@
         </tr>
       </tfoot>
     </table>
+
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis ab,
+      voluptates quae illo tempore et dolor sit unde incidunt ratione molestiae
+      asperiores suscipit officiis vero accusantium facilis minus, dignissimos
+      at accusamus quisquam in qui! Itaque ullam rerum totam sed consectetur
+      magni, nesciunt quidem vel! Eveniet ea, reprehenderit officia aperiam
+      porro ratione delectus modi, ducimus autem possimus, enim aut tempora?
+      Itaque, pariatur! Vel aspernatur autem illo magni maxime sed obcaecati
+      nobis cum at aliquid expedita, voluptas a placeat minus fugiat ipsa
+      delectus consectetur quo. Dolore neque, at doloribus optio ipsa animi
+      autem dolorum architecto ullam, eligendi voluptatem dolorem mollitia.
+      Laboriosam, veniam. Totam explicabo consectetur architecto, fugit quam
+      soluta itaque qui voluptatum quae iure, adipisci maxime ea ad vero ipsam?
+      Cupiditate, qui fuga! Eum, hic, non, repellat obcaecati reprehenderit
+      ullam esse accusamus autem praesentium tempora laboriosam amet earum! Vero
+      veritatis cumque sequi eaque ullam excepturi temporibus odio laboriosam
+      nobis ab beatae eveniet similique perspiciatis ipsa quo non quae esse
+      molestias a, animi maiores. Ipsam accusantium ducimus culpa officia,
+      repellendus repellat eum expedita explicabo tempora deserunt velit quaerat
+      dolore nulla incidunt dolor a laudantium natus modi cum sequi dolorum
+      voluptatem. Ad asperiores labore tenetur assumenda magnam iure, ipsum
+      quaerat eos! Dolorem, officia? Quidem?
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis ab,
+      voluptates quae illo tempore et dolor sit unde incidunt ratione molestiae
+      asperiores suscipit officiis vero accusantium facilis minus, dignissimos
+      at accusamus quisquam in qui! Itaque ullam rerum totam sed consectetur
+      magni, nesciunt quidem vel! Eveniet ea, reprehenderit officia aperiam
+      porro ratione delectus modi, ducimus autem possimus, enim aut tempora?
+      Itaque, pariatur! Vel aspernatur autem illo magni maxime sed obcaecati
+      nobis cum at aliquid expedita, voluptas a placeat minus fugiat ipsa
+      delectus consectetur quo. Dolore neque, at doloribus optio ipsa animi
+      autem dolorum architecto ullam, eligendi voluptatem dolorem mollitia.
+      Laboriosam, veniam. Totam explicabo consectetur architecto, fugit quam
+      soluta itaque qui voluptatum quae iure, adipisci maxime ea ad vero ipsam?
+      Cupiditate, qui fuga! Eum, hic, non, repellat obcaecati reprehenderit
+      ullam esse accusamus autem praesentium tempora laboriosam amet earum! Vero
+      veritatis cumque sequi eaque ullam excepturi temporibus odio laboriosam
+      nobis ab beatae eveniet similique perspiciatis ipsa quo non quae esse
+      molestias a, animi maiores. Ipsam accusantium ducimus culpa officia,
+      repellendus repellat eum expedita explicabo tempora deserunt velit quaerat
+      dolore nulla incidunt dolor a laudantium natus modi cum sequi dolorum
+      voluptatem. Ad asperiores labore tenetur assumenda magnam iure, ipsum
+      quaerat eos! Dolorem, officia? Quidem?
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis ab,
+      voluptates quae illo tempore et dolor sit unde incidunt ratione molestiae
+      asperiores suscipit officiis vero accusantium facilis minus, dignissimos
+      at accusamus quisquam in qui! Itaque ullam rerum totam sed consectetur
+      magni, nesciunt quidem vel! Eveniet ea, reprehenderit officia aperiam
+      porro ratione delectus modi, ducimus autem possimus, enim aut tempora?
+      Itaque, pariatur! Vel aspernatur autem illo magni maxime sed obcaecati
+      nobis cum at aliquid expedita, voluptas a placeat minus fugiat ipsa
+      delectus consectetur quo. Dolore neque, at doloribus optio ipsa animi
+      autem dolorum architecto ullam, eligendi voluptatem dolorem mollitia.
+      Laboriosam, veniam. Totam explicabo consectetur architecto, fugit quam
+      soluta itaque qui voluptatum quae iure, adipisci maxime ea ad vero ipsam?
+      Cupiditate, qui fuga! Eum, hic, non, repellat obcaecati reprehenderit
+      ullam esse accusamus autem praesentium tempora laboriosam amet earum! Vero
+      veritatis cumque sequi eaque ullam excepturi temporibus odio laboriosam
+      nobis ab beatae eveniet similique perspiciatis ipsa quo non quae esse
+      molestias a, animi maiores. Ipsam accusantium ducimus culpa officia,
+      repellendus repellat eum expedita explicabo tempora deserunt velit quaerat
+      dolore nulla incidunt dolor a laudantium natus modi cum sequi dolorum
+      voluptatem. Ad asperiores labore tenetur assumenda magnam iure, ipsum
+      quaerat eos! Dolorem, officia? Quidem?
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis ab,
+      voluptates quae illo tempore et dolor sit unde incidunt ratione molestiae
+      asperiores suscipit officiis vero accusantium facilis minus, dignissimos
+      at accusamus quisquam in qui! Itaque ullam rerum totam sed consectetur
+      magni, nesciunt quidem vel! Eveniet ea, reprehenderit officia aperiam
+      porro ratione delectus modi, ducimus autem possimus, enim aut tempora?
+      Itaque, pariatur! Vel aspernatur autem illo magni maxime sed obcaecati
+      nobis cum at aliquid expedita, voluptas a placeat minus fugiat ipsa
+      delectus consectetur quo. Dolore neque, at doloribus optio ipsa animi
+      autem dolorum architecto ullam, eligendi voluptatem dolorem mollitia.
+      Laboriosam, veniam. Totam explicabo consectetur architecto, fugit quam
+      soluta itaque qui voluptatum quae iure, adipisci maxime ea ad vero ipsam?
+      Cupiditate, qui fuga! Eum, hic, non, repellat obcaecati reprehenderit
+      ullam esse accusamus autem praesentium tempora laboriosam amet earum! Vero
+      veritatis cumque sequi eaque ullam excepturi temporibus odio laboriosam
+      nobis ab beatae eveniet similique perspiciatis ipsa quo non quae esse
+      molestias a, animi maiores. Ipsam accusantium ducimus culpa officia,
+      repellendus repellat eum expedita explicabo tempora deserunt velit quaerat
+      dolore nulla incidunt dolor a laudantium natus modi cum sequi dolorum
+      voluptatem. Ad asperiores labore tenetur assumenda magnam iure, ipsum
+      quaerat eos! Dolorem, officia? Quidem?
+    </p>
   </body>
 </html>
