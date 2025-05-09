@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudos de Iframe</title>
+    <style>
+      iframe {
+        border: 1px dashed black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Testando o uso de iframe</h1>
+    <!-- Podemos usar o iframe para carregar uma pagina dentro da nossa, ele vai carregar o site em uma box inline que tem um tamanho padrão de 300x150-->
+    <p>
+      Site
+      <!-- Alguns navegadores podem não ser compatives com iframe nesse caso podemos apenas dentro da tag colocar um "a" com o link do site que queriamos mostrar dentro iframe-->
+      <iframe
+        src="https://www.cursoemvideo.com/"
+        frameborder="0"
+        height="500px"
+        scrolling="no"
+      >
+        <!-- Temos o parametro de scrolling, podemos usar auto, yes e no por padrão ele vem no auto, se a pagina for maior que o iframe e gerar rolagem vai ter a barra, o yes mesmo que pagina seja menor que o frame ele vai ter barra e o no não vai permitir criar essa barra-->
+        <a href="https://www.cursoemvideo.com/">do Curso em video</a>
+      </iframe>
+    </p>
+
+    <p>
+      Meu repositório
+      <iframe
+        src="https://raul-m-santos.github.io/html-css/"
+        frameborder="0"
+        height="500px"
+      >
+        <a href="https://raul-m-santos.github.io/html-css/"> do Github</a>
+      </iframe>
+    </p>
+  </body>
+</html>
