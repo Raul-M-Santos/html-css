@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uso de Iframe</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #tela {
+        height: 400px;
+        width: 95vw;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Faça uma escolha</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, rem
+      voluptas, nesciunt hic iusto sequi laudantium necessitatibus debitis
+      temporibus, libero adipisci beatae recusandae nisi itaque commodi quia
+      ipsa sint dolorum? Lorem ipsum dolor, sit amet consectetur adipisicing
+      elit. Officia totam rerum, facilis vel quasi a! Voluptatum fugit eius
+      exercitationem facere ea nihil, laudantium placeat incidunt cum
+      perspiciatis rerum eaque aspernatur.
+    </p>
+
+    <!-- Uma coisa que podemos fazer é pedir para esses links abirem dentro desse iframe usando o target, basta no iframe configurar um parametro "name" e no "a" que quisermos que ele abra dentro do frame é so usar target="" + "O name declarado"-->
+
+    <ul>
+      <li>
+        <a href="paginas-extras/pag001.html" target="frame">Primeira Pagina</a>
+      </li>
+      <li>
+        <a href="paginas-extras/pag002.html" target="frame">Segunda Pagina</a>
+      </li>
+      <li>
+        <a href="paginas-extras/pag003.html" target="frame">Terceira Pagina</a>
+      </li>
+    </ul>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, rem
+      voluptas, nesciunt hic iusto sequi laudantium necessitatibus debitis
+      temporibus, libero adipisci beatae recusandae nisi itaque commodi quia
+      ipsa sint dolorum? Lorem ipsum dolor, sit amet consectetur adipisicing
+      elit. Officia totam rerum, facilis vel quasi a! Voluptatum fugit eius
+      exercitationem facere ea nihil, laudantium placeat incidunt cum
+      perspiciatis rerum eaque aspernatur.
+    </p>
+
+    <!-- Podemos usar o srcdoc e escrever html dentro desse iframe, podemos usar isso para fazer uma configuração enqunato não selecionam um link para carregar dentro do iframe -->
+
+    <iframe
+      frameborder="0"
+      id="tela"
+      name="frame"
+      srcdoc="<h1>Escolha um dos links acima</h1>"
+    >
+      <p>Seu Navegador não é compativel com iframe</p>
+    </iframe>
+
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo similique
+      debitis voluptatum libero. Dicta itaque placeat ab, minima, distinctio
+      nemo sed earum est culpa voluptatum sunt quasi iste sit. Eius? Lorem ipsum
+      dolor, sit amet consectetur adipisicing elit. Saepe accusantium deleniti
+      eos explicabo, ratione similique? Quaerat at error sunt similique omnis
+      dolores quo eum consequatur. Quia iste dolor quam esse.
+    </p>
+  </body>
+</html>
