@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>Meu primeiro formulário</h1>
+    <!-- Assim como no caso das tabelas todos os formulários devem estar dentro de uma tag no caso dos formulários precisamos usar a tag form e dentro dela podemos solicitar informações -->
+
+    <!-- Precisamos determinar para onde essas informações vão, para isso podemos usar o parametro de action e escolher o arquivo (normalmente uma linguagem de programação) para onde queremos enviar essas informações -->
+
+    <!-- Podemos usar a tag de label para identificar para o navegador para onde esse paragrafo está indicando que a informação deve ser digitada
+    podemos colocar dentro do parametro for o id do campo input, nesse caso o id do primeiro input é iname e o parametro for da label nome vai ser inome -->
+
+    <!-- Label é importante para a criação de sites, tanto para os mecanismos de busca quanto para leitores de tela é imporatante usarmos 
+    Podemos usar um parametro autocomplete para desativar o preenchimento automatico desse formulário -->
+
+    <!-- Temos dois metodos de envio, GET e POST quando você envia algo com o get essa informação vai aparecer na url do site, então não é recomendado usar o get para dados sensiveis mas por exemplo para uma pesquisa não tem problema, outra coisa é que o get não pode passar de 3mil bites (mais ou menos 3mil caracteres) além de não dar para enviar arquivos de fotos, nesse caso podemos usar o metodo POST que não vai parecer oque foi digitado na url do site ou seja melhor para dados sensiveis (apesar de que o melhor nesse caso é usar criptografia https) além de possibilitar o envio de arquivos-->
+    <form action="cadastro.php" autocomplete="off" method="post">
+      <p>
+        <label for="inome">Nome:</label>
+        <input type="text" name="nome" id="inome" />
+      </p>
+      <p>
+        <label for="isobrenome">Sobrenome:</label>
+        <input type="text" name="sobrenome" id="isobrenome"/>
+      </p>
+      <p>
+        <input type="submit" value="Enviar" />
+      </p>
+    </form>
+  </body>
+</html>

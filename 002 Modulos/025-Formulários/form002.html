@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Um atributo util que podemos usar é o required ele faz com que o campo se torne obrigatório então se o usuario clicar no botão submit sem preencher esse campo em questão a pagina não vai avançar
+     
+    Outro parametro que podemos usar é o min ou max lenght ele vai fazer com que o campo tenha um tipo minimo ou maximo de caracteres e não vai permitir o envido do formulario se essa verificação não for alcançada
+    
+    Podemos usar também o parametro de size ele vai determinar apenas o tamano visual da caixa
+    Outro que podemos usar é o placeholder para deixar algo digitado da caixa em questão sendo apenas visual, quando o usuario digitar algo esse placeholder vai desaparecer
+    
+    Podemos também usar o autocomplete dentro dos inputs para dizer para o navegador oque esse input está recebendo então se o usuario tiver algum dado que você solicitar no formulario salvo no navegador ele pode preencher automaticamente esses dados-->
+    <h1>Teste de Formulário</h1>
+    <form action="cadastros.php" method="POST" autocomplete="on">
+      <div>
+        <label for="iusu">Usuário:</label>
+        <input
+          type="text"
+          name="usu"
+          id="iusu"
+          required
+          minlength="5"
+          maxlength="15"
+          placeholder="Nome"
+          autocomplete="username"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="isen">Senha:</label>
+        <input
+          type="password"
+          name="sen"
+          id="isen"
+          required
+          minlength="5"
+          maxlength="30"
+          size="20"
+          placeholder="Senha"
+          autocomplete="new-password"
+        />
+      </div>
+      <br />
+      <div>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </div>
+    </form>
+  </body>
+</html>
