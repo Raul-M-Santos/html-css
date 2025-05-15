@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+  </head>
+
+  <!--Fazendo forms sem inputs
+  
+  Podemos usar o select para fazermos um menu com opções dentro desse select podemos usar a tag option para dizer as opções que vão ficar disponveis para selecionar
+  
+  Outra coisa é que podemos colocar a tag de select dentro de uma tag chamada optgroup para pedir para separamos o conteudo dentro de uma mesma caixa de seleção, util para select com muitas opções, como de estados por exemplo 
+  
+  Para deixarmos uma option já selecionada podemos usar o atributo de selected-->
+  <body>
+    <form action="" method="post" autocomplete="on">
+      <p>
+        <label for="iest">Estado</label>
+        <select name="estado" id="iest">
+          <option value="" selected>----Escolha----</option>
+          <optgroup label="Suldeste">
+            <option value="MG">Minas Gerais</option>
+            <option value="RJ">Rio de Janiero</option>
+            <option value="SP">São Paulo</option>
+          </optgroup>
+
+          <optgroup label="Nordeste">
+            <option value="MA">Maranhão</option>
+            <option value="PE">Pernambuco</option>
+            <option value="RN">Rio Grande do Norte</option>
+          </optgroup>
+        </select>
+      </p>
+      <!--Podemos também criar options e pedir para eles aparecem dentro de alguns campos de input para isso precisamos criar uma tag datalist e dentro colocar as tags de option com os valores que quisermos que apareça dentro do nosso input de text
+    
+        Para efetivamente aparecer no campo de input precisamos apenas dar um id para o nosso datalist e colocar o atributo de list com o id do data list e as opções vão aparecer dentro do campo, permitiando tanto que o usr escreva algo ou mande algo dessa lista pré criada-->
+      <p>
+        <label for="iprof">Profissão</label>
+        <input
+          type="text"
+          name="prof"
+          id="iprof"
+          list="lstprof"
+          autocomplete=""
+          required
+          minlength="5"
+        />
+        <datalist id="lstprof">
+          <option value="ADM">Adiministrador</option>
+          <option value="CONT">Contador</option>
+          <option value="DEV">Desenvolvedor</option>
+          <option value="PROF">Professor</option>
+        </datalist>
+      </p>
+    <!--Outro formulario que podemos solicitar é o de text area, normalmente usado para o usr deixar um comentario ou feedback por escrito  
+    
+    Esse não tem tamnho maximo de envio (a não ser que use o parametro de maxlength para determinar um valor maximo) e podemos alterar o tamanho de linhas e colunas com cols e rows para altura e largura respectivamente e é melhor usar o metodo post para enviar essa informações que podem exercer 3 mil bites do get-->
+      <p>
+        <label for="itxt">Envie uma mensagem</label> <br />
+        <textarea
+          name="txt"
+          id="itxt"
+          cols="30"
+          rows="10"
+          placeholder="Digite algo!"
+          required
+          maxlength=""
+        ></textarea>
+      </p>
+
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+  </body>
+</html>
