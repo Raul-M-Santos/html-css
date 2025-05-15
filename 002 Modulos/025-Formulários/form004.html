@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>Exemplo de formulário</h1>
+    <!-- Podemos usar a tag de fieldset para agrupar esses campos e visualmente ele vai criar uma borda com todos os campos dentro do fieldset além disso dentro do fieldset podemos colocar a tag de legend que vai adicionar um texto nessa borda para indicar para oque é   esse formulário-->
+    <form action="" method="get" autocomplete="on">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+          <p>
+            <label for="inome">Nome:</label>
+            <input
+              type="text"
+              name="nome"
+              id="iname"
+              required
+              minlength="10"
+              autocomplete="name"
+            />
+          </p>
+          <p>
+            <label for="iemail"> Email: </label>
+            <input
+              type="email"
+              name="email"
+              id="iemail"
+              autocomplete="email"
+              required
+              minlength="10"
+            />
+          </p>
+          <p>
+            <label for="itel">Tel:</label>
+            <input
+              type="tel"
+              name="tel"
+              id="itel"
+              autocomplete="tel"
+              required
+              minlength="9"
+              pattern="^[0-9]{4, 5}-[0-9]{4}$"
+            />
+            <!-- O partern acima é uma Expressão regular ela serve para nós mesmos criarmos condições para os campos, começamos com ^ e terminamos com $ entre isso colocamos a expresão no caso o [0-9] pede que seja um numero o 4, 5 diz que deve ter entre 4 e 5 caracteres e depois mais 4 caracteres que configuraria um numero nesse caso-->
+          </p>
+          <!-- Estudar sobre RegEX -->
+          <p>
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Limpar" />
+          </p>
+      </fieldset>
+    </form>
+  </body>
+</html>

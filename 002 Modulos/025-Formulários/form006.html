@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Exemplo Formulário</h1>
+
+    <!-- Formularios de color, para o usr enviar uma cor 
+    Range, para enviar um valor a partir de uma barra 
+    file, para deixar o usuario enviar um arquivo
+    image, para disponibilizar algum arquivo de img para o usr escolher
+
+    para enviar arquivos precisamos usar o metodo post
+    -->
+
+    <form action="" method="post" autocomplete="on">
+      <fieldset>
+        <legend>slákkkk</legend>
+        <p>
+          <label for="icor">Cor</label>
+          <input type="color" name="cor" id="icor" value="" />
+        </p>
+
+        <p>
+          <label for="inivel">Nivel de Satisfação</label>
+          <input type="range" name="nive" id="inivel" min="0" max="10" />
+        </p>
+
+        <p>
+          <label for="ifoto">Foto de Perfil</label>
+          <input type="file" name="foto" id="ifoto" />
+        </p>
+
+        <p>
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Limpar" />
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>

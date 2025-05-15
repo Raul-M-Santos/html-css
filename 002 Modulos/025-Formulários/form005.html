@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>Exemplo Formulário</h1>
+
+    <!-- Uma coisa imporante quando formos criar um formulario com radial (que é um checkbox onde o user deve esclher um ou outro) precisamos usar o mesmo name para ambos dessa forma se ele selecionar um vai desmarcar o outro botão radial
+     
+    no exemplo abaixo se o usr escolher masculino o feminino vai desmarcar por terem o mesmo name-->
+
+    <!-- Outro parametro que podemo usar é o checked para essas caixas de marcações ele determina que uma determinada caixa já vai comerçar marcada -->
+
+    <!-- Outra coisa, essas caixas se marcadas vão enviar o valor de "on" que quer dizer que a caixa está marcada se quisermos enviar um outro valor caso a caixa seja marcada podemos apenas adicionar o parametro de value dentro desse campo-->
+    <form action="" method="get">
+      <fieldset>
+        <legend>Sexo</legend>
+
+        <input
+          type="radio"
+          name="sexo"
+          id="sxmas"
+          checked
+          value="m"
+          required
+          autocomplete="sex"
+        />
+        <label for="sxmas">Masculino</label><br />
+
+        <input
+          type="radio"
+          name="sexo"
+          id="sxfem"
+          value="f"
+          required
+          autocomplete="sex"
+        />
+        <label for="sxfem">Fêminino</label>
+      </fieldset>
+      <fieldset>
+        <legend>Esportes favoritos</legend>
+
+        <input type="checkbox" name="esfut" id="iesfut" checked />
+        <label for="iesfut"> Futebol </label> <br />
+
+        <input type="checkbox" name="esbas" id="iesbas" />
+        <label for="iesbas">Basquete </label><br />
+
+        <input type="checkbox" name="esnat" id="iesnat" />
+        <label for="iesnat">Natação </label><br />
+
+        <input type="checkbox" name="esten" id="iesten" />
+        <label for="iesten">Tênis </label><br />
+      </fieldset>
+
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+  </body>
+</html>
