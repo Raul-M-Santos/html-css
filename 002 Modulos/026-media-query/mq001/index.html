@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <link rel="stylesheet" href="Estilos/tela.css" media="screen" />
+    <link rel="stylesheet" href="Estilos/impressora.css" media="print" />
+  </head>
+
+  <!-- Media queries = media type + media features -->
+
+  <!-- Com o media queries podemos carregar estilos de css diferentes para onde o conteudo está sendo exibido, Podendo carregar os estilos de uma forma se o conteudo for exibido em telas de resoluções diferentes ou até em coisas diferentes como criar um estilo caso alguém queria imprimir a pagina -->
+
+  <!--Para isso usamos o atributo de media no link do css que vamos vincular a pagina -->
+
+  <!-- No exemplo dessa pagina estamos usando apenas o media type, determinando que um estilo deve ser carregado apenas em telas e o outro apenas em impressão mas isso acaba ficando um pouco limitado, já que telas tem muitos tamanhos diferentes por isso podemos usar os medias featrues para dar mais detalhes sobre quando carregar esse estilo ou não -->
+
+  <body>
+    <header>
+      <h1>Notícias</h1>
+
+      <menu>
+        <ul>
+          <li>Esportes</li>
+          <li>Politica</li>
+          <li>Tecnologia</li>
+        </ul>
+      </menu>
+    </header>
+
+    <main>
+      <article>
+        <h2>Aprendendo Media Queries</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsam
+          laborum magnam eaque corrupti, maiores ratione minima a atque sed
+          velit minus obcaecati, odio suscipit vero veniam accusamus. Autem,
+          aliquid? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Quae expedita facere recusandae amet laboriosam unde cum, officiis
+          aliquam qui vitae ipsa voluptatem a, saepe ab odio molestias non.
+          Explicabo, nobis!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At eligendi
+          quaerat dicta ipsa neque maxime, esse recusandae deserunt cum id sed
+          veniam error quibusdam. Voluptatem iste doloribus nemo excepturi aut.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
+          quibusdam perspiciatis ad animi rem provident, tempore ipsa ducimus
+          aspernatur eum distinctio, nobis consectetur praesentium sint iure
+          temporibus voluptate quia corporis.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+          consectetur odio eaque dolores non consequatur quibusdam in
+          laudantium. Doloremque, in neque quisquam recusandae dolores sed
+          deserunt nesciunt consectetur tenetur tempora?
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
