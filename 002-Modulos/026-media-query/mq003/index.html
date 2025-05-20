@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <style>
+      /* Declarações gerais */
+
+      @charset "UTF-8";
+
+      @media all {
+        * {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html,
+        body {
+          width: 100vw;
+          height: 100vh;
+          background-color: #233eff;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+
+        h1 {
+          color: white;
+          text-shadow: 2px 2px 6px #101a66;
+          padding: 15px;
+        }
+      }
+
+      /* Estilo para telas em paisagem */
+
+      @media screen and (orientation: portrait) {
+        body {
+          background-image: url(../imagens/cev-portrait.jpg);
+          background-position: left bottom;
+        }
+      }
+
+      /* Estilo para telas em paisagem */
+
+      @media screen and (orientation: landscape) {
+        body {
+          background-image: url(../imagens/cev-landscape.jpg);
+          background-position: center bottom;
+        }
+      }
+    </style>
+  </head>
+
+  <!--Uma coisa que podemos fazer é cargar essas medias queries dentro de apenas um css bom para projetos menores mas para maiores o recomendado é separar por arquivos, usando o seletor @media + media type and (media feature) ex: @media screen and (orientation: protrait) vai selecionar o media type tela e o media feature do modo paisagem -->
+  <body>
+    <h1>Mude a orientação do seu dispositivo</h1>
+  </body>
+</html>
