@@ -52,7 +52,7 @@ menu > ul > li > a {
   background-color: var(--cormain);
   color: white;
   text-align: center;
-  border-top: 1px solid grey;
+  border-radius: 2px;
 }
 menu > ul > li > a:hover {
   background-color: var(--hover);
@@ -60,6 +60,7 @@ menu > ul > li > a:hover {
 
 main {
   width: 90vw;
+  max-width: 768px;
   background-color: white;
   margin: auto;
   padding: 15px 10px;
