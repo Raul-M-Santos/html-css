@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible Box</title>
+    <style>
+      div.container {
+        display: flex;
+        background-color: aqua;
+        flex-direction: colum;
+      }
+
+      div.item {
+        background-color: yellow;
+        text-align: center;
+        border: 1px solid black;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <!-- 
+  Direções dos eixos
+    
+  Podemos direcionar os exios configuramos isso no container pai com o flex-direction temos row, row-reverse, column, coloumn reverse, isso vai especificar 2 exios do container, o main axis e cross axis
+
+  Dando o exemplo do row (que por padrão é oque vem no display:flex se você não especificar) temos dois eixos da esquerda para direita que é o main axis e, de cima para baixo que é o cross axis isso é importante para usarmos o justy (vamos aprender) para termos noção de qual o exio os items vão receber, 
+
+  O flex-direction:column vai basicamente inverter o main com o cross, o main se torna de cima para baixo e o cross da direita para esquerda e se usarmos o reverse isso vai inverter onde é o main start, por exemplo se usarmos o row-reverse o main axis começa da direita para esquerda, o cross axis não é afetado ele ainda continua de cima para baixo mesma coisa com o column-reverse o main start é de baixo para cima e o cross axis contunua da esquerda para direita
+  -->
+
+  <body>
+    <div class="container">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </div>
+  </body>
+</html>
