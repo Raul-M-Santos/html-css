@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Centralizado</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: lightgrey;
+      }
+
+      main {
+        background-color: lightcoral;
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+      }
+
+      section {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        background-color: lightseagreen;
+        height: 200px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Centralização basica e facil com flexbox podemos centralizar apenas colocando o display como flex no container pai e colocamos o justify-content como center e o align-items como center o contudo filho sempre vai ficar centralizado em relação ao container pai-->
+    <main>
+      <section>
+        <h1>Tela de login</h1>
+      </section>
+    </main>
+  </body>
+</html>

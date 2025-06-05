@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible Box</title>
+    <style>
+      div.container {
+        height: 400px;
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: aqua;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      div.item {
+        background-color: orange;
+        text-align: center;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <!-- Justify-content
+  
+    O Justify é usado no container pai para determinar alguns possiveis espaçamentos entre os conteudos dentro desse container *imagen para ilustrar dentro da pasta*
+  
+    Eles seguem o main axis para se guiar (nesse exemplo o flex direction é um row ou seja o start é esquerda e o end é a direita mas depende da direção do flex)
+  
+    Flex-start (esse vai ser o padrão se não aplicarmos) o conteudo fica alinhado ao main start nesse caso o conteudo fica alinhado a esquerda já que o start do row
+
+    Flex-end Basicamente o start invertido os conteudo vão começar no main end nesse caso na esquerda
+
+    Center Esse vai criar um espaço igual entre o start e o end e vai colocar o conteudo entre esses espaços
+    
+    Space-around Esse cria um espaço entre o star e o end mas diferente do center esse vai criar espaços também entre os conteudos em si fazendo com que o primeiro e ultimo fiquem um pouco mais colados do start e end e o restante fiquem com espaços iguais entre eles
+
+
+    Space-between Esse cola o primerio e o ultimo conteudo ao start e o end e calcula o restante do espaço entre os conteudo para eles ficarem iguais
+
+    Space-evenly Esse vai calcular um espaço exato entre todos os conteudos, Então nem o primeiro nem o ultimo vão ter menos espaço ou vão estar mais colados todos tem exatamente o mesmo espaço entre eles dentro da caixa
+  -->
+
+  <!-- Aling items
+  
+    Parecido com o justify mas esse é para o cross axis e também tem algumas propriedades parecidas com a do jusfity mas esse altera o outro eixo, por exemplo o Flex-start e Flex-end ele vai fazer a mesma coisa de colocar os items perto do cross start ou do cross end ou o center que vai centralizar o conteudo no meio do cross-axis
+
+    Stretch esse é usado apenas para o aling que vai aumentar ou diminuir o tamanho da caixa dos conteudos com o tamanho do container pai (se não colocarmos o aling ele vai usar essa propriedade por padrão) ou seja se o container tiver a altura de 500px a caixa do conteudo também vai ter já que o stretch vai esticar a caixa do conteudo
+  -->
+
+  <body>
+    <div class="container">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </div>
+  </body>
+</html>
