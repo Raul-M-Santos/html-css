@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible Box</title>
+    <style>
+      div.container {
+        display: flex;
+        height: 700px;
+        flex-flow: row wrap;
+        align-content: space-around;
+        background-color: aqua;
+      }
+
+      div.item {
+        padding: 40px;
+        background-color: lightcoral;
+        text-align: center;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <!-- Align content
+    
+  o Align content é um seletor para controlarmos a caixa caso tenha quebra com o wrap ele vai fucionar parecido com o align-items mas nesse caso ele apenas aplica caso o conteudos quebrem com o wrap por padrão ele vem com stretch (o align-content pode atralhar o funcionamento do aling-items então o melhor é não usar ambos juntos)
+
+  Além o stretch temos o flex start e end que são parecidos com os dos outros seletores vão mover os conteudos para o cross start ou end
+
+  temos o center que vai criar dois espaços iguais no start e end e vai centralizar o conteudo ao centro no eixo transversal
+
+  Space-between:
+  Vai criar um epaço entre os conteudo e vai colar eles ao start e o end
+
+  Space-evenly:
+  Vai criar um espaço entre o start o end e meio de tamanhos iguais fazendo com que o conteudo tenham exatamente o mesmo tamanho entre eles
+
+  Space-around:
+   Vai criar um espaço entre o start o end mas diferente do evenly ele vai criar espaços menores fazendo o centro ficar maior (o centro tem o dobro do tamanho do start e do end)
+  -->
+
+  <body>
+    <div class="container">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </div>
+  </body>
+</html>
