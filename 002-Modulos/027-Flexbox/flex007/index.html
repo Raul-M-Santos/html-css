@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible Box</title>
+    <style>
+      div.container {
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: aqua;
+      }
+
+      div.item {
+        background-color: lightcoral;
+        text-align: center;
+        border: 1px solid black;
+        padding: 20px;
+      }
+
+      #i1 {
+        order: -2;
+      }
+
+      #i2 {
+        order: 4;
+      }
+
+      #i3 {
+        order: 6;
+      }
+
+      #i4 {
+        order: -5;
+      }
+
+      #i5 {
+        order: 0;
+      }
+
+      #i6 {
+        order: 1;
+      }
+
+      #i7 {
+        order: 0;
+      }
+
+    </style>
+  </head>
+
+  <!-- Agora que terminamos todos as propriedades dos container vamos aprender sobre as propriedades dos items vamos começar pelo order
+   
+  Order:
+  É um valor que os items recebem para serem ordernados pelo flexbox e por padrão todos tem o valor "0" isso siginifica que se não colocarmos o order os contudos vão aparecer na ordem do html mas se colocarmos um valor ele vai alterar a ordem que o conteudo é exibido 
+
+  os conteudos seguem a ordem crencente oque tiver maior valor vai aparecendo para o final do nosso container podemos colocar desde um valor negativo até qualquer possitivo
+    -->
+
+  <body>
+    <div class="container">
+      <div class="item" id="i1">A</div>
+      <div class="item" id="i2">B</div>
+      <div class="item" id="i3">C</div>
+      <div class="item" id="i4">D</div>
+      <div class="item" id="i5">E</div>
+      <div class="item" id="i6">F</div>
+      <div class="item" id="i7">G</div>
+    </div>
+  </body>
+</html>
