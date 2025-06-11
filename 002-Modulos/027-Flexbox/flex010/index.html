@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible Box</title>
+    <style>
+      div.container {
+        display: flex;
+        background-color: aqua;
+        flex-flow: row nowrap;
+      }
+
+      div.item {
+        background-color: lightcoral;
+        text-align: center;
+        border: 1px solid black;
+        flex-basis: 240px;
+        flex-shrink: 1;
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+
+  <!-- Vamos agora para o flex-skrink e flex-grow Como o nome indica eles são propriedades para alterar o tamanho dos conteudos em relação ao container pai
+   
+  Flex-shrink: Podemos usar 0 ou 1, Ou seja se usarmos 0 os items não vão diminuir mesmo que o container pai seja menor que o total dos items, Isso vai gerar quebra caso esteja usando o nowrap já que a caixa não vai querar nem o conteudo encolher o conteudo pode quebrar para fora do container o pai (O valor padrão de shrink é 1 ou seja se não explicitarmos que não queremos que o conteudo não diminua por padrão ele vai dimunir para caber dentro do container pai)
+
+  Flex-grow: O grow tem os mesmos valores de 0 ou 1, sendo 0 não vai aumentar e 1 o conteudo vai aumentar caso tenha espaço sobrando no container pai fazendo os conteudos ocuparem o tamanho total do conteiner pai independete do tamanho dele (O valor padrão do grow é 0 ou seja os conteudos não vão ocupar o tamanho total do container pai a não ser que declaramos como 1)
+
+  Novamente são propriedades para aplicarmos nos conteudos não no container pai, Esses podem ser usados normalmente com ou sem o wrap e podem ser aplicados apenas a um dos items apesar de normalmente aplicarmos a todos (Assim como todas as ultimas propriedades que são para os items)
+  -->
+
+  <body>
+    <div class="container">
+      <div class="item">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit qui ea
+        sint, dicta in dolorem exercitationem doloribus eveniet tempora suscipit
+        ducimus corrupti! Odio modi, dolorem praesentium porro magnam molestias
+        doloremque!
+      </div>
+      <div class="item">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam delectus
+        repellat esse voluptas totam vel ullam, debitis nemo quisquam
+        asperiores, soluta, pariatur voluptates. Repellat architecto nisi,
+        voluptas aliquam quae explicabo! Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. A repellat vitae nobis doloremque sed, consequatur
+        facere consequuntur quisquam ea placeat odit perspiciatis est tempore.
+        Reiciendis ipsam repellendus accusantium dolor ullam?
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolor
+        rem iste neque. Commodi veniam, saepe cum repellendus quas praesentium
+        ipsa amet consequuntur voluptas necessitatibus corrupti illo veritatis
+        facere at. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Tempore culpa, blanditiis dolorem eos quis quaerat sunt minus voluptate
+        repellendus aspernatur non odio neque distinctio voluptates! Placeat
+        vero magni provident recusandae. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Eius, possimus cupiditate quam illum quibusdam
+        necessitatibus quaerat impedit qui molestiae debitis! Sed doloremque
+        numquam perferendis consequatur natus provident dolorum veniam soluta!
+      </div>
+    </div>
+  </body>
+</html>

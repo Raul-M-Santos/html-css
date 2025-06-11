@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible Box</title>
+    <style>
+      div.container {
+        display: flex;
+        background-color: aqua;
+        flex-flow: row nowrap;
+      }
+
+      div.item {
+        background-color: lightcoral;
+        text-align: center;
+        border: 1px solid black;
+        flex-basis: 200px;
+      }
+
+      div#cxa {
+        flex-shrink:0;
+        flex-grow: 2;
+      }
+
+      div#cxb {
+        flex-shrink:1;
+        flex-grow: 2;
+      }
+
+      div#cxc {
+        flex-shrink:10;
+        flex-grow: 2;
+      }
+    </style>
+  </head>
+
+  <!-- Uma coisa que podemos fazer é colocar valores diferentes de 1 tanto para o grow quanto para shrink podemos determinar por exemplo 2, 3, 4 oque isso vai fazer:
+
+  Caso tenhamos 2 items dentro de um mesmo container com diferentes valores de grow esses items vão aumentar (ou diminuir caso seja o shrink) de tamanhos diferentes sempre seguindo a proporção dos valores declarados, então se eu tiver flex-grow: 1; em um conteudo e flex-grow: 2; em outro, o que tiver 2 vai creser o dobro do 1 não porque 2 é um valor para ele aumentar o dobro mas porque em proporção ao 1, 2 seria o dobro dele. 
+  
+  
+  Se eles tivessem flex-grow: 2; em um e flex-grow: 4 em outro, oque tiver 4 vai creser o dobro do que tem 2 novamente sempre seguindo a proporção entre os valores, então se tiver apenas um flex-grow configurado dentro de todos os items ele não vai creser 4x por que eu determinei ele como 4 se não tiver outro valor de flex-grow no mesmo container pai ele vai apenas creser para ocupar o espaço disponviel no container pai, mas se tiverem 2 flex-grow com valores diferentes precisamos calculcar a proporção para cresermos mais um ou outro
+  -->
+
+  <body>
+    <div class="container">
+      <div class="item" id="cxa">a</div>
+      <div class="item" id="cxb">b</div>
+      <div class="item" id="cxc">c</div>
+    </div>
+  </body>
+</html>
