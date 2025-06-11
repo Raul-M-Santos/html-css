@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible Box</title>
+    <style>
+      div.container {
+        display: flex;
+        background-color: aqua;
+        flex-flow: row nowrap;
+      }
+
+      div.item {
+        background-color: lightcoral;
+        text-align: center;
+        border: 1px solid black;
+      }
+
+      div#cxa {
+        flex: 2 0 200px;
+      }
+
+      div#cxb {
+        flex: 2 1 150px;
+      }
+
+      div#cxc {
+        flex: 2 10 auto;
+      }
+    </style>
+  </head>
+
+  <!--
+  Temos um shorthand para essas 3 configurações que usamos bastante juntas o grow shrink e basis e podemos declarar elas nessa ordem usando a configuração de "flex:" então primeiro o grow + shrink + basis assim como o exemplo acima (inclusive é mais recomendado usar esse shorthand)
+
+  Porém para esse temos algumas opções a mais como o flex:initial; que basicamente carrega os valores padrões do grow, shrink, e basis (mesmo sendo o valor padrão para alguns casos é bom declarar já que o navegador pode tratar os conteudo de forma diferente) então flex:initial; é a mesma coisa que flex: 0 1 auto; já que esses são os valores de grow shrink e basis respectivamente 
+
+  Podemos usar também o flex: none; que é basicamente deixar algum item não flexivel flex: none; é igual flex: 0 0 auto; ou seja basicamente estamos falando não quero que esse item nem aumente de tamanho nem diminua
+
+  E temos também o flex: auto; esse é o oposto do none a caixa vai ter o maximo de flexibilidade possivel flex: auto; é igual a flex: 1 1 auto; ou seja o item pode aumentar ou diminuir o quanto der
+
+  temos também o "flex: 1;" quando declaramos apenas um valor dentro do flex estamos dizendo que esse valor é do grow já que esse é o primeiro que declaramos já o restante vai ser seus valores padrões de shrink e basis flex: 1; é igual a flex: 1 1 auto;
+  -->
+
+  <body>
+    <div class="container">
+      <div class="item" id="cxa">a</div>
+      <div class="item" id="cxb">b</div>
+      <div class="item" id="cxc">c</div>
+    </div>
+  </body>
+</html>
