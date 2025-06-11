@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible Box</title>
+    <style>
+      div.container {
+        display: flex;
+        background-color: aqua;
+        flex-flow: row nowrap;
+      }
+
+      div.item {
+        background-color: lightcoral;
+        text-align: center;
+        border: 1px solid black;
+        flex-basis: 150px;
+      }
+    </style>
+  </head>
+
+  <!-- Vamos aprender sobre flex-basis que é uma forma de alterarmos o tamanho dos conteudos dentro de um container flexivel sempre no eixo principal nesse caso por ser um row oque é alterado vai ser a largura (é mais recomendado que usar widht ou height) E temos umas opções para usar (também é aplicado no item não no container)
+   
+  Auto: basicamente deixa o conteiner do tamanho do do conteudo de dentro dele ou seja se tiver uma img de 300x300 o container vai ter um tamanho parecido
+
+  Px: Podemos determinar um tamanho em px para as caixas por exemplo 150px mas esse valor é modificado depdendo do tamanho do container pai, então se todos os conteudos de 150px forem maiores que a caixa eles vão dimuir (pelo menos com esse metodo) já que a ideia do flex basis ser uma base de tamanho.
+  -->
+
+  <body>
+    <div class="container">
+      <div class="item">A</div>
+      <div class="item">Outro Conteúdo</div>
+      <div class="item">C</div>
+      <div class="item">Conteúdo um pouco maior</div>
+      <div class="item">E</div>
+      <div class="item">Conteúdo maior ainda que vai ocupar mais espaço</div>
+      <div class="item">G</div>
+    </div>
+  </body>
+</html>
