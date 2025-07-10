@@ -30,20 +30,20 @@ p {
 
 section.flex-content {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   padding: 20px;
   background-color: lightgray;
 }
 
-article.text-media {
+article.media-text {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
 
-article.media-text {
+article.text-media {
   display: flex;
-  flex-flow: row wrap-reverse;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
 
