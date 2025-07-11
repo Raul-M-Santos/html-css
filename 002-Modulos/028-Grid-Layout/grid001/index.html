@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout pratica</title>
+    <style>
+      div.container {
+        border: 1px dashed black;
+        height: 250px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        gap: 5px;
+      }
+
+      div.item {
+        border: 1px dashed red;
+        padding: 5px;
+      }
+    </style>
+  </head>
+
+  <!-- Podemos usar o grid para criarmos interfaces bidimencionais (diferente do flexbox que podemos usar apenas unidimencionais) ele é bom para criarmos a estrutura geral das caixas e onde as coisas vão ser posicionadas na pagina ele não substitui o flexbox mas temos mais controle da interface como um todo
+   
+  Como o nome indica o grid é uma forma de manipilarmos os items em forma de grade, podemos criar linhas (lines) para traçarmos onde exatamente queremos que algo apareça e onde termine. Para tornarmos um container grid precisamos apenas dar a propriedade de display: grid; após isso podemos determinar as linhas de coluna e de linha usando grid-template-columns e grid-template-rows podemos determinar como auto que vai fazer com que o(s) item(s) se exapanda até prencher a caixa por completo ou dar um tamamnho para cada linha, no exemplo acima colocamos 3 linhas horizontais e 3 colunas (uma caixa 3x3) (se quiser uma visão melhor confira a imagem)
+   -->
+  <body>
+    <div class="container">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </div>
+  </body>
+</html>
