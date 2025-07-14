@@ -6,16 +6,20 @@
     <title>Grid Layout pratica</title>
     <style>
       div.container {
-        border: 1px dashed black;
+        border: 2px solid blue;
         height: 250px;
         display: grid;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto auto;
         gap: 5px;
+        align-items: normal;
+        justify-items: normal;
+        align-content: stretch;
+        justify-content: normal;
       }
 
       div.item {
-        border: 1px dashed red;
+        border: 2px solid red;
         padding: 5px;
       }
     </style>
@@ -23,8 +27,20 @@
 
   <!-- Podemos usar o grid para criarmos interfaces bidimencionais (diferente do flexbox que podemos usar apenas unidimencionais) ele é bom para criarmos a estrutura geral das caixas e onde as coisas vão ser posicionadas na pagina ele não substitui o flexbox mas temos mais controle da interface como um todo
    
-  Como o nome indica o grid é uma forma de manipilarmos os items em forma de grade, podemos criar linhas (lines) para traçarmos onde exatamente queremos que algo apareça e onde termine. Para tornarmos um container grid precisamos apenas dar a propriedade de display: grid; após isso podemos determinar as linhas de coluna e de linha usando grid-template-columns e grid-template-rows podemos determinar como auto que vai fazer com que o(s) item(s) se exapanda até prencher a caixa por completo ou dar um tamamnho para cada linha, no exemplo acima colocamos 3 linhas horizontais e 3 colunas (uma caixa 3x3) (se quiser uma visão melhor confira a imagem)
+  Como o nome indica o grid é uma forma de manipilarmos os items em forma de grade, podemos criar linhas (lines) para traçarmos onde exatamente queremos que algo apareça e onde termine. Para tornarmos um container grid precisamos apenas dar a propriedade de display: grid; após isso podemos determinar as linhas de coluna e de linha usando grid-template-columns e grid-template-rows podemos determinar como "auto" que vai fazer com que o(s) item(s) se exapanda até prencher a caixa por completo ou dar um tamamnho para cada linha, no exemplo acima colocamos 3 linhas horizontais e 3 colunas (uma caixa 3x3) (se quiser uma visão melhor confira a imagem)
    -->
+
+  <!--Assim como no flex podemos usar alguns valores para definir como os items mas também as caixas vão se comportar dentro desse container temos
+        align-items:
+        justify-items: 
+        align-content: 
+        justify-content: 
+        
+  Diferente do flex onde esses valores mudam os conteudos de forma diferente dependendo do eixo no grid eles são fixos então o align sempre cuida do valores na vertical e o justify sempre na horizontal agora sobre o items e o content, o items cuida de com os conteudos vão se portar dentro da suas caixas ou seja nesse html temos "a" como um item então o align items vai cuidar de como esse "a" se comporta dentro da sua caixa verticalmente, temos os valores parecidos com o flex para items, start, end e normal que é o valor padrão e normal é igual a strech, ou seja se não declararmos o "a" vai ocupar a caixa intereira de forma vertical por estarmos tratando do align mas se fosse o justify os items poderiam receber os mesmos valores mas seria para alterar horizontalmente
+  
+  Sobre o content: ele vai mudar como as caixas desses items se comportam então dessa vez não vamos alterar como "a" se comporta dentro da caixa dele mas sim como a caixa do "a" vai ser temos os mesmos valores do items, start, end, normal sendo normal o valor pdrão também e 
+  normal == strech mas no content temos mais alguns valores assim como no flex temos os space, between, evenly e around, que mudam os espaços entre esses conteudos, e assim como no items o align cuida das caixas na vertical e o justify na horizontal -->
+
   <body>
     <div class="container">
       <div class="item">A</div>
@@ -34,6 +50,7 @@
       <div class="item">E</div>
       <div class="item">F</div>
       <div class="item">G</div>
+      <div class="item">H</div>
     </div>
   </body>
 </html>
