@@ -1,11 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid</title>
-</head>
-<body>
-    
-</body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout pratica</title>
+    <style>
+      div.container {
+        border: 2px solid blue;
+        height: 250px;
+        display: grid;
+        grid-template: repeat(3, 100px) / repeat(3, auto);
+        gap: 5px;
+        place-items: start center;
+        place-content: space-between end;
+      }
+
+      div.item {
+        border: 2px solid red;
+        padding: 5px;
+      }
+    </style>
+  </head>
+
+  <!-- Assim como em outra atribuições do css no grid também temos shorthands para declarar certos valores, temos o grid-template que permite que declaremos tanto as rows quanto as columns usando apenas uma linha nessa ordem, então podemos usar por exemplo 100px 100px 100px / auto auto auto estamos dizendo crie 3 rows de 100px e 3 colunas com valores automaticos
+
+    No exemplo acima usamos a função de repeat que é mais facil quando formos declarar valores iguais varias vezes, usamos repeat() e colocamos a quantiade de linhas ou colunas que queremos adicionamos uma virgula, logo depois qual a medida que vai se repetir então 
+    repeat(3, auto); está dizendo que essa linha ou coluna serão 3, com valores automaticos ou seja vão se moldar para ocupar o container todo -->
+
+  <!--Temos também uma shorthand para para o align e justify items e align e justify content que seria o place-items ou place-content e podemos declarar tanto o align quanto o justify para os items e o conteudo em apenas uma linha nessa ordem, primeiro o align (vertical) depois o justify (horizontal) -->
+
+  <body>
+    <div class="container">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+      <div class="item">H</div>
+    </div>
+  </body>
 </html>
