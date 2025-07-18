@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Aqui criamos um grid de 3 por 4    3 linhas 4 colunas */
+.container {
+  display: grid;
+  grid-template: repeat(3, 100px) / repeat(4, 1fr);
+  gap: 2px;
+}
+
+div {
+  text-align: center;
+  border: 1px dashed black;
+}
+
+/* Aqui estamos pedindo para a caixa 1 ter a altura de duas linhas já que o start é no 1 e o end no 2 e pedindo para ter uma largura de 5 colunas já que começa na coluna 1 e termina na 5 criando um retangulo */
+.caixa0 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+/* A segunda caixa vai ter o mesmo tamanho da primeira já começa no 2 e vai ate 4, duas linhas de altura e vai ter tres colunas de largura formando um quadrado um pouco mais largo (começa na coluna 1 e vai até a 3 */
+
+.caixa1 {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/* E na terceira caixa ela tem a mesma altura e largura da outra 2x3 e ocupa o restante do nosso grid */
+.caixa2 {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
