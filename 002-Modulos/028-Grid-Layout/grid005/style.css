@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template: repeat(3, 100px) / repeat(4, 1fr);
+  gap: 2px;
+}
+
+div {
+  text-align: center;
+  border: 1px dashed black;
+}
+
+/* Podemos simplificar ainda mais usando o grid-area, podemos decalarar os valores de start e end tanto do row quanto da column em apenas uma linha separando os valores por barras, sempre começamos pelos starts e depois os ends então começamos no row start, column start, row end, column end (olhe a img para ter um indicativo visual) */
+
+.caixa0 {
+  grid-area: 1 / 1 / 2 / -1;
+}
+
+/* Também podemos usar o span nesse caso do grid-area */
+
+.caixa1 {
+  grid-area: 2 / 1 / span 2 / span 4;
+}
+
+.caixa2 {
+  grid-area: 2 / 3 / 4 / 5;
+}
