@@ -21,7 +21,7 @@ body {
 div.container {
   height: 100dvh;
   display: grid;
-  grid-template: 70px 35px 1fr 70px / 1fr 2fr 1fr;
+  grid-template: 70px 35px 1fr 70px / 1fr 1fr 1fr;
 }
 
 #topo {
@@ -39,11 +39,20 @@ div.container {
 }
 
 #principal {
+  display: flex;
+  flex-flow: nowrap column;
+  justify-content: center;
+  align-items: start;
   grid-area: 3 / 1 / 4 / -2;
   padding: 20px;
+  border-right: 1px solid black;
 }
 
 #secundario {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-flow: nowrap column;
   grid-area: 3 / 3 / 4 / -1;
   padding: 20px;
 }
@@ -58,6 +67,12 @@ div.container {
 h2 {
   color: var(--corprincial);
   padding-bottom: 6px;
+  transition: color 0.2s;
+}
+
+h2:hover {
+  cursor: pointer;
+  color: var(--corsecundaria);
 }
 
 nav > a,
