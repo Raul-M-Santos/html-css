@@ -21,7 +21,7 @@ body {
 div.container {
   height: 100dvh;
   display: grid;
-  grid-template: 70px 35px 1fr 70px / 1fr 2fr 1fr;
+  grid-template: 70px 35px 1fr 70px / 1fr 2fr 2fr;
 }
 
 #topo {
@@ -36,16 +36,28 @@ div.container {
   place-content: center;
   place-items: center;
   background-color: var(--corsecundaria);
+  margin-bottom: 10px;
 }
 
 #principal {
+  display: flex;
+  flex-flow: nowrap column;
+  justify-content: center;
+  align-items: start;
   grid-area: 3 / 1 / 4 / -2;
   padding: 20px;
+  border-right: 1px solid rgba(0, 0, 0, 0.418);
+  padding-left: 50px;
 }
 
 #secundario {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-flow: nowrap column;
   grid-area: 3 / 3 / 4 / -1;
   padding: 20px;
+  padding-left: 50px;
 }
 
 #rodape {
@@ -53,11 +65,18 @@ div.container {
   place-content: center;
   place-items: center;
   background-color: var(--corprincial);
+  margin-top: 10px;
 }
 
 h2 {
   color: var(--corprincial);
   padding-bottom: 6px;
+  transition: color 0.3s;
+}
+
+h2:hover {
+  cursor: pointer;
+  color: var(--corsecundaria);
 }
 
 nav > a,
@@ -74,4 +93,13 @@ a {
 
 nav > a:hover {
   text-decoration: underline;
+}
+
+p {
+  padding-top: 7px;
+  transition: color 1s;
+}
+
+p > a:hover {
+  color: rgba(255, 255, 255, 0.479);
 }
