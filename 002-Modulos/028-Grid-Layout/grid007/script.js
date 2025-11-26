@@ -1,7 +1,7 @@
 let dados = [];
 
 async function buscar() {
-  a = await fetch("data.json");
-  dados = await a.json()
+  resposta = await fetch("data.json");
+  dados = await resposta.json();
   console.log(dados);
 }
