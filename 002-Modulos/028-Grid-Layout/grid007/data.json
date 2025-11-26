@@ -1,0 +1,52 @@
+[
+  {
+    "nome": "C",
+    "data_criacao": "1972",
+    "uso": "Foi criada para o desenvolvimento de sistemas operacionais e software de baixo nível. Comumente usada em sistemas embarcados, software de sistemas, e desenvolvimento de infraestrutura."
+  },
+  {
+    "nome": "Python",
+    "data_criacao": "1991",
+    "uso": "Desenvolvida para ser uma linguagem de alto nível, fácil de ler e escrever. Usada em ciência de dados, inteligência artificial, web development, automação, e scripts de todos os tipos."
+  },
+  {
+    "nome": "Java",
+    "data_criacao": "1995",
+    "uso": "Criada com a filosofia de 'Write Once, Run Anywhere'. Usada em desenvolvimento de aplicativos corporativos, sistemas móveis (Android), web, e grandes sistemas empresariais."
+  },
+  {
+    "nome": "JavaScript",
+    "data_criacao": "1995",
+    "uso": "Criada para adicionar interatividade às páginas da web. Usada principalmente no front-end de websites, mas também no back-end com Node.js."
+  },
+  {
+    "nome": "Ruby",
+    "data_criacao": "1995",
+    "uso": "Desenvolvida com o objetivo de ser uma linguagem intuitiva e fácil de ler. Usada principalmente no desenvolvimento web, especialmente com o framework Ruby on Rails."
+  },
+  {
+    "nome": "C++",
+    "data_criacao": "1985",
+    "uso": "Extensão da linguagem C com suporte a orientação a objetos. Usada em desenvolvimento de software de alto desempenho, como jogos, sistemas operacionais e aplicações de tempo real."
+  },
+  {
+    "nome": "PHP",
+    "data_criacao": "1995",
+    "uso": "Criada para desenvolvimento de páginas dinâmicas na web. Comumente usada em backend de websites, especialmente em plataformas como WordPress e frameworks como Laravel."
+  },
+  {
+    "nome": "Swift",
+    "data_criacao": "2014",
+    "uso": "Desenvolvida pela Apple para substituir o Objective-C. Usada principalmente no desenvolvimento de aplicativos para iOS, macOS, watchOS e tvOS."
+  },
+  {
+    "nome": "Go (Golang)",
+    "data_criacao": "2009",
+    "uso": "Criada pelo Google para ser simples, eficiente e escalável. Usada em sistemas distribuídos, backend de servidores web, e aplicativos de alta performance."
+  },
+  {
+    "nome": "R",
+    "data_criacao": "1993",
+    "uso": "Desenvolvida para análise estatística e visualização de dados. Usada principalmente em ciência de dados, estatísticas e machine learning."
+  }
+]
